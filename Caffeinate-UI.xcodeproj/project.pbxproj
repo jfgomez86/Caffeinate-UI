@@ -9,18 +9,20 @@
 /* Begin PBXBuildFile section */
 		821315B6227E2B6300245502 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821315B5227E2B6300245502 /* AppDelegate.swift */; };
 		821315B8227E2B6300245502 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821315B7227E2B6300245502 /* ViewController.swift */; };
-		821315BA227E2B6500245502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821315B9227E2B6500245502 /* Assets.xcassets */; };
 		821315BD227E2B6500245502 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821315BB227E2B6500245502 /* Main.storyboard */; };
+		821315C6227E7BE000245502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 821315C5227E7BE000245502 /* Assets.xcassets */; };
+		821315C8227E863200245502 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821315C7227E863200245502 /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		821315B2227E2B6300245502 /* Caffeinate-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Caffeinate-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		821315B5227E2B6300245502 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		821315B7227E2B6300245502 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		821315B9227E2B6500245502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		821315BC227E2B6500245502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		821315BE227E2B6500245502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		821315BF227E2B6500245502 /* Caffeinate_UI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Caffeinate_UI.entitlements; sourceTree = "<group>"; };
+		821315C5227E7BE000245502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		821315C7227E863200245502 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +56,11 @@
 			isa = PBXGroup;
 			children = (
 				821315B5227E2B6300245502 /* AppDelegate.swift */,
+				821315C7227E863200245502 /* StatusMenuController.swift */,
 				821315B7227E2B6300245502 /* ViewController.swift */,
-				821315B9227E2B6500245502 /* Assets.xcassets */,
 				821315BB227E2B6500245502 /* Main.storyboard */,
 				821315BE227E2B6500245502 /* Info.plist */,
+				821315C5227E7BE000245502 /* Assets.xcassets */,
 				821315BF227E2B6500245502 /* Caffeinate_UI.entitlements */,
 			);
 			path = "Caffeinate-UI";
@@ -121,7 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				821315BA227E2B6500245502 /* Assets.xcassets in Resources */,
+				821315C6227E7BE000245502 /* Assets.xcassets in Resources */,
 				821315BD227E2B6500245502 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				821315C8227E863200245502 /* StatusMenuController.swift in Sources */,
 				821315B8227E2B6300245502 /* ViewController.swift in Sources */,
 				821315B6227E2B6300245502 /* AppDelegate.swift in Sources */,
 			);
