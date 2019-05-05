@@ -67,7 +67,7 @@ class StatusMenuController: NSObject {
     func runCaffeinateTask() {
         caffeinateTask = Process()
         caffeinateTask.launchPath = "/usr/bin/caffeinate"
-        caffeinateTask.arguments = ["-w \(ProcessInfo().processIdentifier)"]
+        caffeinateTask.arguments = ["-w \(ProcessInfo().processIdentifier)", "-di"]
         caffeinateTask.launch()
     }
 }
