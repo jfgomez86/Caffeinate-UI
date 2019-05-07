@@ -12,7 +12,9 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="0Bq-C4-96W" customClass="StatusMenuController" customModule="Caffeinate_UI" customModuleProvider="target">
                     <connections>
+                        <outlet property="foreverMenuItem" destination="qsR-Ro-Vwk" id="pzD-1W-4vn"/>
                         <outlet property="statusMenu" destination="Wub-gd-X4k" id="ase-Pr-AwE"/>
+                        <outlet property="twoHoursMenuItem" destination="HLt-0z-jMd" id="BAx-HI-zxL"/>
                     </connections>
                 </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -46,10 +48,24 @@
                 </application>
                 <menu title="CaffeinateUI" id="Wub-gd-X4k">
                     <items>
-                        <menuItem title="Preferences..." id="HLt-0z-jMd">
+                        <menuItem title="Prevent Sleep:" enabled="NO" id="fk2-H3-gna">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
-                        <menuItem title="Quit" keyEquivalent="q" id="INc-8U-wuY">
+                        <menuItem title="Forever" id="qsR-Ro-Vwk">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="foreverClicked:" target="0Bq-C4-96W" id="VbP-tO-8M3"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="2 hours" id="HLt-0z-jMd">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="twoHoursClicked:" target="0Bq-C4-96W" id="ALo-4y-msa"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="bxQ-RH-cTg"/>
+                        <menuItem title="Quit" id="INc-8U-wuY">
+                            <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="quitClicked:" target="0Bq-C4-96W" id="eWE-bh-vg3"/>
                             </connections>
