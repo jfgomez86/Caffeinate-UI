@@ -14,6 +14,7 @@
 		821315C8227E863200245502 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821315C7227E863200245502 /* StatusMenuController.swift */; };
 		82681703228514D1004E4C45 /* CaffeinateStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82681702228514D1004E4C45 /* CaffeinateStatus.swift */; };
 		8268170622851B26004E4C45 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8268170522851B26004E4C45 /* Int.swift */; };
+		827CDDCD2285C44C00524573 /* AboutCaffeinateUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827CDDCC2285C44C00524573 /* AboutCaffeinateUI.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		821315C7227E863200245502 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		82681702228514D1004E4C45 /* CaffeinateStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinateStatus.swift; sourceTree = "<group>"; };
 		8268170522851B26004E4C45 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		827CDDCC2285C44C00524573 /* AboutCaffeinateUI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutCaffeinateUI.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +65,12 @@
 				821315B5227E2B6300245502 /* AppDelegate.swift */,
 				821315C7227E863200245502 /* StatusMenuController.swift */,
 				821315B7227E2B6300245502 /* ViewController.swift */,
-				821315BB227E2B6500245502 /* Main.storyboard */,
 				821315BE227E2B6500245502 /* Info.plist */,
 				821315C5227E7BE000245502 /* Assets.xcassets */,
 				821315BF227E2B6500245502 /* Caffeinate_UI.entitlements */,
 				82681702228514D1004E4C45 /* CaffeinateStatus.swift */,
+				821315BB227E2B6500245502 /* Main.storyboard */,
+				827CDDCC2285C44C00524573 /* AboutCaffeinateUI.storyboard */,
 			);
 			path = "Caffeinate-UI";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827CDDCD2285C44C00524573 /* AboutCaffeinateUI.storyboard in Resources */,
 				821315C6227E7BE000245502 /* Assets.xcassets in Resources */,
 				821315BD227E2B6500245502 /* Main.storyboard in Resources */,
 			);

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="hdo-fq-2aV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About CaffeinateUI-->
+        <scene sceneID="Zby-YA-ual">
+            <objects>
+                <viewController title="About CaffeinateUI" id="hdo-fq-2aV" customClass="ViewController" customModule="Caffeinate_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="hVH-qP-R0r">
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="312"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDw-M8-Eus">
+                                <rect key="frame" x="83" y="53" width="330" height="206"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="hMo-xW-HGB">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="206"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="4BA-VI-mDe">
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="206"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="330" height="206"/>
+                                            <size key="maxSize" width="332" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment>
+                                                    <string key="content">This is my take on an app to keep my Mac from sleeping when I need to.
+--
+jfgomez86
+
+Icons made by Freepik and Good Ware from https://www.flaticon.com:
+
+https://www.freepik.com/
+https://www.flaticon.com/authors/good-ware</string>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="bUR-hP-obA">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="UNP-0h-Wpv">
+                                    <rect key="frame" x="-100" y="-100" width="16" height="205"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="eDw-M8-Eus" firstAttribute="leading" secondItem="hVH-qP-R0r" secondAttribute="leading" constant="83" id="7GO-Of-z7B"/>
+                            <constraint firstItem="eDw-M8-Eus" firstAttribute="top" secondItem="hVH-qP-R0r" secondAttribute="top" constant="53" id="LnC-59-Dhi"/>
+                            <constraint firstItem="eDw-M8-Eus" firstAttribute="centerX" secondItem="hVH-qP-R0r" secondAttribute="centerX" id="Nks-Mc-Dik"/>
+                            <constraint firstItem="eDw-M8-Eus" firstAttribute="centerY" secondItem="hVH-qP-R0r" secondAttribute="centerY" id="oX6-W5-wwb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="5Uy-Sv-8vJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="712"/>
+        </scene>
+    </scenes>
+</document>
