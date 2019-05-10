@@ -85,7 +85,7 @@ class StatusMenuController: NSObject {
     }
     
     // MARK: Actions
-    @objc fileprivate func displayMenu() {
+    @objc func displayMenu() {
         // This method is deprecated, however it's the only way I could make right click work differently than left clicking
         item.popUpMenu(statusMenu)
     }
