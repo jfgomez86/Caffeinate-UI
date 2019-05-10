@@ -12,7 +12,9 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="0Bq-C4-96W" customClass="StatusMenuController" customModule="Caffeinate_UI" customModuleProvider="target">
                     <connections>
+                        <outlet property="fiveHoursMenuItem" destination="i5g-9c-ghT" id="8AZ-yJ-3lV"/>
                         <outlet property="foreverMenuItem" destination="qsR-Ro-Vwk" id="pzD-1W-4vn"/>
+                        <outlet property="oneHourMenuItem" destination="TPT-WZ-JSz" id="CoH-zF-AXF"/>
                         <outlet property="statusMenu" destination="Wub-gd-X4k" id="ase-Pr-AwE"/>
                         <outlet property="twoHoursMenuItem" destination="HLt-0z-jMd" id="BAx-HI-zxL"/>
                     </connections>
@@ -51,21 +53,28 @@
                         <menuItem title="Prevent Sleep:" enabled="NO" id="fk2-H3-gna">
                             <modifierMask key="keyEquivalentModifierMask"/>
                         </menuItem>
-                        <menuItem title="Forever" id="qsR-Ro-Vwk">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                        <menuItem title="Forever" keyEquivalent="0" id="qsR-Ro-Vwk">
                             <connections>
                                 <action selector="foreverClicked:" target="0Bq-C4-96W" id="VbP-tO-8M3"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="2 hours" id="HLt-0z-jMd">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                        <menuItem title="1 hour" keyEquivalent="1" id="TPT-WZ-JSz">
+                            <connections>
+                                <action selector="oneHourClicked:" target="0Bq-C4-96W" id="rhf-Gj-r1j"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="2 hours" keyEquivalent="2" id="HLt-0z-jMd">
                             <connections>
                                 <action selector="twoHoursClicked:" target="0Bq-C4-96W" id="ALo-4y-msa"/>
                             </connections>
                         </menuItem>
+                        <menuItem title="5 hours" keyEquivalent="3" id="i5g-9c-ghT">
+                            <connections>
+                                <action selector="fiveHoursClicked:" target="0Bq-C4-96W" id="sf8-07-Gqi"/>
+                            </connections>
+                        </menuItem>
                         <menuItem isSeparatorItem="YES" id="bxQ-RH-cTg"/>
-                        <menuItem title="Quit" id="INc-8U-wuY">
-                            <modifierMask key="keyEquivalentModifierMask"/>
+                        <menuItem title="Quit" keyEquivalent="q" id="INc-8U-wuY">
                             <connections>
                                 <action selector="quitClicked:" target="0Bq-C4-96W" id="eWE-bh-vg3"/>
                             </connections>
@@ -101,36 +110,64 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Caffeinate_UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="345"/>
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="312"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="rsi-F5-bdm">
-                                <rect key="frame" x="87" y="88" width="306" height="170"/>
-                                <textFieldCell key="cell" selectable="YES" alignment="center" id="EZR-tG-ekI">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <string key="title">This is my take on an app to keep my Mac from sleeping when I need to.
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVv-88-23l">
+                                <rect key="frame" x="83" y="53" width="330" height="206"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Zyi-0e-Dwy">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="206"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="8gH-qV-Be5">
+                                            <rect key="frame" x="0.0" y="0.0" width="330" height="206"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="330" height="206"/>
+                                            <size key="maxSize" width="332" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment>
+                                                    <string key="content">This is my take on an app to keep my Mac from sleeping when I need to.
 --
 jfgomez86
 
-Icons made by Freepik and Good Ware from www.flaticon.com 
+Icons made by Freepik and Good Ware from https://www.flaticon.com:
 
 https://www.freepik.com/
 https://www.flaticon.com/authors/good-ware</string>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="12" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="gzV-Uf-Nf1">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="p5C-r7-WVt">
+                                    <rect key="frame" x="-100" y="-100" width="16" height="205"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="rsi-F5-bdm" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="4WU-lZ-kGf"/>
-                            <constraint firstItem="rsi-F5-bdm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="89" id="ZUz-3N-xkU"/>
-                            <constraint firstItem="rsi-F5-bdm" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="lcx-Gq-OBU"/>
+                            <constraint firstItem="JVv-88-23l" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="OHT-UD-2ol"/>
+                            <constraint firstItem="JVv-88-23l" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="THg-vX-mXJ"/>
+                            <constraint firstItem="JVv-88-23l" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="53" id="nJf-TA-WEj"/>
+                            <constraint firstItem="JVv-88-23l" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="83" id="x2E-zw-odI"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="721"/>
+            <point key="canvasLocation" x="75" y="712"/>
         </scene>
     </scenes>
 </document>
