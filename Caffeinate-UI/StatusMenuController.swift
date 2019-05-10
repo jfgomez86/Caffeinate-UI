@@ -90,7 +90,7 @@ class StatusMenuController: NSObject {
         item.popUpMenu(statusMenu)
     }
     
-    fileprivate func setMenuIconTo(_ state:CaffeinateStatus) {
+    func setMenuIconTo(_ state:CaffeinateStatus) {
         item.button?.image = NSImage(named: "\(state)_icon_32x32")
     }
 
