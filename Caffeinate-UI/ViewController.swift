@@ -12,7 +12,7 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NSApp.activate(ignoringOtherApps: true)
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +21,5 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 

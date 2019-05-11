@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="hdo-fq-2aV">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="TJO-7f-fUc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -67,7 +67,27 @@ https://www.flaticon.com/authors/good-ware</string>
                 </viewController>
                 <customObject id="5Uy-Sv-8vJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="712"/>
+            <point key="canvasLocation" x="139" y="554"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="b5X-Nk-Scx">
+            <objects>
+                <windowController showSeguePresentationStyle="single" id="TJO-7f-fUc" sceneMemberID="viewController">
+                    <window key="window" title="About CaffeinateUI" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="fKQ-xg-uqA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="245" y="301" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <connections>
+                            <outlet property="delegate" destination="TJO-7f-fUc" id="GrL-U2-xuN"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="hdo-fq-2aV" kind="relationship" relationship="window.shadowedContentViewController" id="9B3-N2-Fhp"/>
+                    </connections>
+                </windowController>
+                <customObject id="O43-L3-FNh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
